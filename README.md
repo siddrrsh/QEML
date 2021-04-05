@@ -13,6 +13,5 @@ See QEMLpaper!
 
 # Notes
 - Selected for publication on ArXiV
-- Currently under review for Quantum Information Processing (QINP - Springer)
 
 
