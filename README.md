@@ -1,7 +1,7 @@
 # QEML
 Quantum Enhanced Machine Learning Projects
 
-<img src="circuit.png"
+<img src="Circuit.png"
      alt="QKNN Circuit"
      style="float: left; margin-right: 10px;" />
 
