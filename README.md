@@ -11,6 +11,6 @@ https://arxiv.org/abs/2002.10453
 
 
 # Notes
-- Selected for publication on ArXiV
+- This research was conducted as an exploratory resource for the growing field of quantum machine learning. 
 
 
