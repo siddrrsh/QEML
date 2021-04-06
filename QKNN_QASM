@@ -1,0 +1,56 @@
+*NOT TRANSPILED
+
+OPENQASM 2.0;
+include "qelib1.inc";
+gate aplusd ( param ) d, a0, a1, o {
+	ccx d, a0, a1;
+  ccx d, a0, a1;
+  ccx d, a0, a1;
+  x o;
+}
+
+gate or ( param ) i0, i1, i2, o0, o1 {
+	x i0;
+  x i1;
+  x i2;
+  ccx i0, i1, i2;
+  ccx i2, o0, o1;
+  x o1;
+}
+
+qreg q[9];
+creg c[9];
+
+h q[0];
+h q[1];
+x q[3];
+id q[4];
+id q[5];
+id q[6];
+cx q[1], q[3];
+id q[4];
+id q[5];
+id q[6];
+cx q[0], q[2];
+id q[3];
+id q[4];
+id q[5];
+id q[6];
+id q[0];
+id q[1];
+x q[2];
+x q[3];
+x q[4];
+id q[5];
+x q[6];
+aplusd(pi/2) q[3],q[4],q[5],q[6];
+aplusd(pi/2) q[3],q[4],q[5],q[6];
+or(pi/2) q[4],q[5],q[6],q[7],q[8];
+measure q[1] -> c[1];
+measure q[2] -> c[2];
+measure q[3] -> c[3];
+measure q[4] -> c[4];
+measure q[5] -> c[5];
+measure q[6] -> c[6];
+measure q[7] -> c[7];
+measure q[8] -> c[8];
