@@ -3,7 +3,7 @@ Quantum Enhanced Machine Learning Projects
 
 <img src="Circuit.png"
      alt="QKNN Circuit"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 20px;" />
 
 
 # Project Goal
